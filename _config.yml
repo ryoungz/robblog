@@ -1,0 +1,10 @@
+# Site settings
+title: Blerdbyte
+email: madebyrobert@gmail.com
+description: Personal blog and portfolio
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://blerdbyte.com" # the base hostname & protocol for your site
+twitter_username: robertcyoung
+
+# Build settings
+markdown: kramdown
