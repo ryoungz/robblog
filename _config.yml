@@ -8,3 +8,14 @@ twitter_username: robertcyoung
 
 # Build settings
 markdown: kramdown
+permalink: /:title
+
+# Default settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Robert Young
+      layout: "posts"
