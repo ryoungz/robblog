@@ -3,6 +3,7 @@ layout: post
 title:  "Swift-ly Changing Course"
 date:   2014-06-04 16:04:48 -0600
 categories: ios programming
+permalink: Swift-ly-Changing-Course
 image: apple_swift_logo.jpg
 ---
 When I first heard the news that Apple was replacing Objective-C with their new Swift programming language, I was a bit irritated. Over the past four months I had worked my way through several small projects to sharpen my Objective-C chops. I was just getting to the point where I was comfortable with the language and the Xcode environment. Now that is all out the window.
