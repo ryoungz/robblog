@@ -2,22 +2,36 @@
 layout: default
 ---
 
-<div class="home">
+<div class="site-content">
+	<div class="container">
+		<p class="header-description">I am an interactive developer focused on creating compelling digital experiences.</p>
+		<p class="header-link"><a href="info.html">Learn more about me &#8594;</a></p>
+	</div>
 
-  <h1 class="page-heading">Posts</h1>
+	<section class="main-featured">
+		<div class="main-featured-background">
+			<img src="" alt="">
+		</div>
+			<div class="main-featured-description">
+			<div class="container">
+				<h1 class="main-featured-heading">Featured Project</h1>
+				<h2 class="main-featured-title">Name of project</h2>
+				<p><a href="" class="btn">View Project</a></p>
+			</div>
+		</div>
+	</section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+	<section class="main-notes">
+		<div class="container">
+			<h1 class="main-notes-title">Latest notes</h1>
+		</div>
+		<div class="container">
+            {% for post in site.posts %}
+			<article class="main-notes-post">
+				<div class="main-notes-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+				<div class="main-notes-description"><a href="{{ post.url }}"><h1>{{ post.title }}</h1></a></div>
+			</article>
+            {% endfor %}
+		</div>
+	</section>
 </div>
