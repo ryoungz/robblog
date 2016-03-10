@@ -1,0 +1,21 @@
+---
+layout: default
+title: Notes
+---
+
+
+<div class="site-content">
+    <div class="container">
+        <h1 class="page-title">Notes</h1>
+    </div>
+    <div class="main-notes">
+        <div class="container">
+            {% for post in site.posts %}
+			<article class="main-notes-post">
+				<div class="main-notes-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+				<div class="main-notes-description"><a href="{{ post.url }}"><h1>{{ post.title }}</h1></a></div>
+			</article>
+            {% endfor %}
+        </div>
+    </div>
+</div>
