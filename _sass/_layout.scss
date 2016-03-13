@@ -12,7 +12,9 @@ nav {
     background-color: transparent;
     text-transform: uppercase;
     text-decoration: none; }
-
+.nav-current-item {
+    text-decoration: underline;
+}
 .container {
   max-width: 64em;
   margin: 0 auto; }
