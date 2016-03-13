@@ -2,9 +2,11 @@
     <div class="container">
         <a href="index.html"><h1 class="header-title">Robert C Young</h1><h2 class="header-subtitle">/ Interactive Developer</h2></a>
         <nav class="header-nav" role="navigation">
-            <a href="work.html">Work</a>
-            <a href="notes.html">Notes</a>
-            <a href="info.html">Info</a>
+            {% for page in site.pages %}
+                {% if page.title %}
+                <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                {% endif %}
+            {% endfor %}
         </nav>
     </div>
 </header>
