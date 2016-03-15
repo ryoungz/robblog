@@ -35,8 +35,11 @@ header {
   line-height: 2.25; }
   .header-link a {
     text-decoration: none; }
-
+.header-nav {
+    padding-right: 15px
+}
 .main-content .header-title {
+    padding-left: 15px;
   display: inline-block;
   font-size: .9em;
   letter-spacing: .02em;
@@ -218,6 +221,8 @@ header {
           flex-direction: column; }
 
 .site-content {
+    padding-left: 15px;
+    padding-right: 15px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
