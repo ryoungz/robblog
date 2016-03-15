@@ -68,6 +68,9 @@ header {
   padding: 1em 0; }
 
 .info-photo {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
   max-width: 30%;
   border: 2px solid #16659D; }
 
@@ -82,7 +85,11 @@ header {
 
 .info-description {
   width: 80%;
-  font-size: 1.25em; }
+  font-size: 1.25em;
+    p {
+        margin-top: 0;
+    }
+}
 
 .main-featured-background {
   height: 550px;
