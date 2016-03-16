@@ -39,7 +39,7 @@ header {
     padding-right: 15px
 }
 .main-content .header-title {
-    padding-left: 15px;
+  padding-left: 15px;
   display: inline-block;
   font-size: .9em;
   letter-spacing: .02em;
@@ -90,10 +90,18 @@ header {
         margin-top: 0;
     }
 }
-
-.main-featured-background {
-  height: 550px;
-  background: #16659D; }
+  .main-featured-background {
+      display: block;
+      height: 550px;
+      position: relative;
+      text-align: center;
+      z-index: -1;
+      background: url('img/augeo001.jpg') no-repeat fixed center top;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
 
 .main-featured-description {
   position: relative;
