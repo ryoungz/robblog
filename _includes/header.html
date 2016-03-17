@@ -7,7 +7,7 @@
             {% for page in site.pages %}
             <!-- Compate the page title to the URL -->
             {% assign current = page.title | downcase %}
-                {% if page.title %}
+                {% if page.menuitem %}
                 <a {% if location == current %} class="nav-current-item" {% else %} class="nav-item" {% endif %} href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 {% endif %}
             {% endfor %}
