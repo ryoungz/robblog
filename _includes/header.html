@@ -1,8 +1,8 @@
 <!-- Cature and store a URL -->
 {% capture location %} {{ page.url | split:'/' }} {% endcapture %}
-<header class="main-content">
-    <div class="container">
-        <a href="/"><h1 class="header-title">Robert C Young</h1><h2 class="header-subtitle">/ Interactive Developer</h2></a>
+<header>
+    <div class="container main-content">
+        <h1 class="header-title"><a href="/">Robert C Young<span class="header-subtitle" >/ Interactive Developer</span></a></h1>
         <nav class="header-nav" role="navigation">
             {% for page in site.pages %}
             <!-- Compate the page title to the URL -->

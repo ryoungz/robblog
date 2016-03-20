@@ -285,3 +285,32 @@ header {
     -ms-flex: 1;
     flex: 1;
 }
+
+@media (max-width: 769px) {
+  .header-nav, .main-content {
+    display: flex;
+  }
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1025px) {
+  .main-content .header-title {
+    padding-left: 30px;
+  }
+
+  .header-nave {
+    padding-right:30px;
+  }
+}
