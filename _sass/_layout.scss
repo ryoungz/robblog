@@ -290,6 +290,9 @@ header {
   .header-nav, .main-content {
     display: flex;
   }
+  .header-nav {
+    flex-direction: column;
+  }
   .main-content {
     flex-direction: column;
     align-items: center;
