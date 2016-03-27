@@ -127,11 +127,6 @@ header {
     }
 }
 
-.main-featured-background {
-    height: 550px;
-    background: #16659D;
-}
-
 .main-featured-description {
     position: relative;
     z-index: 2;
@@ -179,7 +174,7 @@ header {
     border-bottom: none;
 }
 
-.main-notes-title {
+.main-notes-title, .main-project-title {
     margin: 0;
     font-size: .9em;
     text-transform: uppercase;
@@ -264,32 +259,6 @@ header {
     margin-top: -5px;
     margin-bottom: -5px;
 }
-
-// .thumb-title {
-//     display: inline-block;
-//     vertical-align: middle;
-//     margin: 25%;
-//     padding: 1.5em;
-//     color: #16659D;
-// }
-
-// .thumb-header {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     width: 100%;
-//     opacity: 0;
-//     text-align: center;
-//     background-color: rgba(36, 42, 50, 0.95);
-//     -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-//     transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-// }
-
-// .thumb-header:hover {
-//     opacity: 1;
-// }
 
 .site {
     display: -webkit-box;
