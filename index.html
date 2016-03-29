@@ -20,7 +20,7 @@ layout: default
 			<h1 class="main-notes-title">Latest notes</h1>
 		</div>
 		<div class="container">
-            {% for post in site.posts %}
+            {% for post in site.posts limit:2 %}
 			<article class="main-notes-post">
 				<div class="main-notes-date">{{ post.date | date: "%b %-d, %Y" }}</div>
 				<div class="main-notes-description"><a href="{{ post.url }}"><h1>{{ post.title }}</h1></a></div>
