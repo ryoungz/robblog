@@ -14,7 +14,12 @@ menuitem: true
             {% for post in site.posts %}
 			<article class="main-notes-post">
 				<div class="main-notes-date">{{ post.date | date: "%b %-d, %Y" }}</div>
-				<div class="main-notes-description"><a href="{{ post.url }}"><h1>{{ post.title }}</h1></a></div>
+				<div class="main-notes-description">
+                    <a href="{{ post.url }}">
+                        <h1>{{ post.title }}</h1>
+                        <p class="excerpt">{{ post.excerpt }}</p>
+                    </a>
+                </div>
 			</article>
             {% endfor %}
         </div>
